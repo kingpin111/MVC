@@ -55,6 +55,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="o3N-et-kqk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="05Q-r9-Egl"/>
                             <constraint firstItem="o3N-et-kqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Cg-bv-7iW"/>
@@ -81,10 +82,16 @@
                             <outlet property="hintLabel" destination="o44-8Q-eTy" id="GTF-Gb-Dqa"/>
                             <outlet property="incorrectCountLabel" destination="qXs-Sp-ooa" id="v1F-z0-20f"/>
                             <outlet property="promptLabel" destination="o3N-et-kqk" id="8qH-7F-0e1"/>
+                            <outletCollection property="gestureRecognizers" destination="hpS-dP-LgY" appends="YES" id="rs7-Xk-xgT"/>
                         </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hpS-dP-LgY">
+                    <connections>
+                        <action selector="toggleAnswerLabels:" destination="BYZ-38-t0r" id="HEU-Pq-Xhj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="139" y="139"/>
         </scene>
