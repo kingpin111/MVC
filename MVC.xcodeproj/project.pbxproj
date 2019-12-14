@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5756F5CC23A5226E00F4375E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5756F5CB23A5226E00F4375E /* AppSettings.swift */; };
 		57747FB5239CA7B600631A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57747FB4239CA7B600631A94 /* AppDelegate.swift */; };
 		57747FB7239CA7B600631A94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57747FB6239CA7B600631A94 /* SceneDelegate.swift */; };
 		57747FB9239CA7B600631A94 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57747FB8239CA7B600631A94 /* QuestionViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5756F5CB23A5226E00F4375E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		57747FB1239CA7B600631A94 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57747FB4239CA7B600631A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57747FB6239CA7B600631A94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				57747FCE239CAD9500631A94 /* Question.swift */,
 				57747FD0239CADE600631A94 /* QuestionGroup.swift */,
 				57747FD2239CAE9800631A94 /* QuestionGroupData.swift */,
+				5756F5CB23A5226E00F4375E /* AppSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5756F5CC23A5226E00F4375E /* AppSettings.swift in Sources */,
 				57747FB9239CA7B600631A94 /* QuestionViewController.swift in Sources */,
 				57747FCF239CAD9500631A94 /* Question.swift in Sources */,
 				57747FB5239CA7B600631A94 /* AppDelegate.swift in Sources */,
