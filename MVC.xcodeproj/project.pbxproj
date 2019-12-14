@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5756F5CC23A5226E00F4375E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5756F5CB23A5226E00F4375E /* AppSettings.swift */; };
+		5756F5CE23A526F300F4375E /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5756F5CD23A526F300F4375E /* AppSettingsViewController.swift */; };
 		57747FB5239CA7B600631A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57747FB4239CA7B600631A94 /* AppDelegate.swift */; };
 		57747FB7239CA7B600631A94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57747FB6239CA7B600631A94 /* SceneDelegate.swift */; };
 		57747FB9239CA7B600631A94 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57747FB8239CA7B600631A94 /* QuestionViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		5756F5CB23A5226E00F4375E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		5756F5CD23A526F300F4375E /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		57747FB1239CA7B600631A94 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57747FB4239CA7B600631A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57747FB6239CA7B600631A94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				57747FB8239CA7B600631A94 /* QuestionViewController.swift */,
 				57900C7F239CE9C50060708F /* SelectQuestionGroupViewController.swift */,
+				5756F5CD23A526F300F4375E /* AppSettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				57900C89239D2F9A0060708F /* RandomQuestionStrategy.swift in Sources */,
 				57900C85239D2C780060708F /* QuestionStrategy.swift in Sources */,
 				57747FD1239CADE600631A94 /* QuestionGroup.swift in Sources */,
+				5756F5CE23A526F300F4375E /* AppSettingsViewController.swift in Sources */,
 				57900C80239CE9C50060708F /* SelectQuestionGroupViewController.swift in Sources */,
 				57747FB7239CA7B600631A94 /* SceneDelegate.swift in Sources */,
 			);

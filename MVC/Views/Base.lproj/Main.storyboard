@@ -71,7 +71,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Pi-C2-EDu"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Question Group" id="j6R-fo-MrF"/>
+                    <navigationItem key="navigationItem" title="Select Question Group" id="j6R-fo-MrF">
+                        <barButtonItem key="leftBarButtonItem" image="ic_settings" id="irm-Tz-Vcd">
+                            <connections>
+                                <segue destination="Vp6-cT-1UB" kind="show" id="aMe-6e-bWe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Xer-wD-2MR" id="6uW-Iw-uGB"/>
                     </connections>
@@ -79,6 +85,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47E-5t-Pnm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="293" y="139"/>
+        </scene>
+        <!--App Settings-->
+        <scene sceneID="XkN-qn-XRw">
+            <objects>
+                <tableViewController title="App Settings" id="Vp6-cT-1UB" customClass="AppSettingsViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W4A-VT-dMD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Vp6-cT-1UB" id="y0O-NA-Bz3"/>
+                            <outlet property="delegate" destination="Vp6-cT-1UB" id="eF1-y4-Imw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="j1C-bw-kcc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yY4-d6-k7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="803"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -197,5 +222,6 @@
     <resources>
         <image name="ic_circle_check" width="80" height="80"/>
         <image name="ic_circle_x" width="80" height="80"/>
+        <image name="ic_settings" width="26" height="26"/>
     </resources>
 </document>
