@@ -18,8 +18,16 @@ public class SelectQuestionGroupViewController: UIViewController {
     
     // MARK: - Properties
     private let appSettings = AppSettings.shared
-    public let questionGroups = QuestionGroup.allGroups()
-    private var selectedQuestionGroup: QuestionGroup!
+    private let questionGroupCareTaker = QuestionGroupCareTaker()
+    private var questionGroups: [QuestionGroup] {
+        return questionGroupCareTaker.questionGroups
+    }
+    private var selectedQuestionGroup: QuestionGroup! {
+        get { return questionGroupCareTaker.selectedQuestionGroup }
+        set { questionGroupCareTaker.selectedQuestionGroup = newValue }
+    }
+    //public let questionGroups = QuestionGroup.allGroups()
+    //private var selectedQuestionGroup: QuestionGroup!
 }
 
 // MARK: - UITableViewDataSource
