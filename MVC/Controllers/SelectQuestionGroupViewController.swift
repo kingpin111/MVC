@@ -28,6 +28,16 @@ public class SelectQuestionGroupViewController: UIViewController {
     }
     //public let questionGroups = QuestionGroup.allGroups()
     //private var selectedQuestionGroup: QuestionGroup!
+    // MARK: - View Lifecycle
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        questionGroups.forEach {
+            print("\($0.title): " +
+                "correctCount \($0.score.correctCount), " +
+                "incorrectCount \($0.score.incorrectCount)"
+            )
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -60,7 +70,7 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
         //viewController.questionGroup = selectedQuestionGroup
         //viewController.questionStrategy = RandomQuestionStrategy(questionGroup: selectedQuestionGroup)
         //viewController.questionStrategy = SequentialQuestionStrategy(questionGroup: selectedQuestionGroup)
-        viewController.questionStrategy = appSettings.questionStrategy(for: selectedQuestionGroup)
+        viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCareTaker)
         viewController.delegate = self
     }
 }
